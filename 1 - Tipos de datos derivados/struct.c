@@ -14,13 +14,13 @@ typedef struct INFORMACION
 
 int main()
 {
-	Libro L1; // Declaración de un libro
+	Libro L1;                                // Declaración de un libro
 
 	printf("\n");
 	printf("Ingrese el nombre > ");
-	scanf("%[^\n]", L1.nombre);
+	scanf("%[^\n]", L1.nombre);              // Ingresa texto hasta presionar Intro
 	printf("Ingrese el autor > ");
-	scanf("%*c%[^\n]", L1.autor);
+	scanf("%*c%[^\n]", L1.autor);            // Igresa texto después de un char
 	printf("Ingrese la editorial > ");
 	scanf("%*c%[^\n]", L1.editoriar);
 	printf("Ingrese el num de paginas > ");
@@ -32,6 +32,6 @@ int main()
 	printf("\nEditorial: %s", L1.editoriar);
 	printf("\nPag: %d", L1.paginas);
 	printf("\n");
-	
+
 	return 0;
 }
