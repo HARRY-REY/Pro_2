@@ -16,19 +16,19 @@ int main()
 	for ( int i=0 ; i < MAX_SIZE ; i++ )
 	{
 		printf("\nIngrese el nombre del alumno [%d] > " , i);
-		fgets(lista[i].nombre , 50 , stdin); // Con esto leemos hasta 50 caracteres o hasta que se precione Intro
+		fgets(lista[i].nombre , 50 , stdin);                  // Con esto leemos hasta 50 caracteres o hasta que se precione Intro
 		printf("Ingrese la calificación de > ");
-		scanf("%d" , &lista[i].calificacion); // Después de poner esto se genera un problema al leer el siguiente printf
-		getchar(); // Esto es una solución
+		scanf("%d" , &lista[i].calificacion);                 // Después de poner esto se genera un problema al leer el siguiente printf
+		getchar();                                            // Esto es una solución
 	}
 
 	printf("\n");
 	printf("\n\tDatos");
 	printf("\n");
-	
+
 	for ( int i=0 ; i < MAX_SIZE ; i++ )
 	{
-		printf("\n");
+		printf("\n\n");
 		printf("Nombre: %s" , lista[i].nombre);
 		printf("Calificacion: %d" , lista[i].calificacion);
 	}
